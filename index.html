@@ -702,9 +702,9 @@ tbody tr:hover { background: var(--surface-2); }
     // email table
     const et = D.email_table;
     tableInto("#email-table", [
-      { label: "Organisation", get: r => r.organisation }, { label: "Common adoptions", num: true, get: r => r.common_adoptions },
+      { label: "Org.", get: r => r.organisation }, { label: "Common", num: true, get: r => r.common_adoptions },
       { label: "Identical", num: true, get: r => r.identical }, { label: "Modified", num: true, get: r => r.modified },
-      { label: "Unidentified", num: true, get: r => r.unidentified }, { label: "Identical across both", num: true, get: r => r.identical_across_both }
+      { label: "Unident.", num: true, get: r => r.unidentified }, { label: "Identical in both", num: true, get: r => r.identical_across_both }
     ], et);
     tableInto("#cand-table", [{ label: "Step", get: r => r.step }, { label: "Standards", num: true, get: r => r.n }], D.candidate_steps);
   }
